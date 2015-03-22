@@ -19,18 +19,18 @@ To run the script, source run_analysis.R. After running, you will see the follow
 [run_analysis.R] Starting up. 
 [run_analysis.R] Preparing to run analysis. 
 [run_analysis.R] Reading datasets. 
-[run_analysis.R] Getting dataset: /repos/Getting-and-Cleaning-Data-Project/data/test 
+[run_analysis.R] Getting dataset: /repos/Getting-and-Cleaning-Data-Project/testing_data 
 [run_analysis.R]   reading features... 
 [run_analysis.R]   reading activities... 
 [run_analysis.R]   reading subjects... 
-[run_analysis.R] Getting dataset: /repos/Getting-and-Cleaning-Data-Project/data/train 
+[run_analysis.R] Getting dataset: /repos/Getting-and-Cleaning-Data-Project/training_data
 [run_analysis.R]   reading features... 
 [run_analysis.R]   reading activities... 
 [run_analysis.R]   reading subjects... 
 [run_analysis.R] Joining datasets. 
 [run_analysis.R] Melting. 
 [run_analysis.R] Dcasting. 
-[run_analysis.R] Saving clean data to: /repos/Getting-and-Cleaning-Data-Project/data/cleaned.txt 
+[run_analysis.R] Saving clean data to: /repos/Getting-and-Cleaning-Data-Project/cleaned_data.txt 
 
 Process
 
@@ -51,3 +51,23 @@ The resulting clean dataset is in this repository at: data/cleaned.txt. It conta
 Notes
 
 X_* - feature values (one row of 561 features for a single activity) Y_* - activity identifiers (for each row in X_) subject_ - subject identifiers for rows in X_*
+
+
+The dataset also includes the following files:
+=========================================
+
+- 'features_info.txt': Shows information about the variables used on the feature vector.
+- 'features.txt': List of all features.
+- 'activity_labels.txt': Links the class labels with their activity name.
+- 'X_training_data.txt': Training set.
+- 'y_training_data.txt': Training labels.
+- 'X_testing_data.txt': Test set.
+- 'y_testing_data.txt': Test labels.
+The following files are available for the train and test data. Their descriptions are equivalent.
+- 'subject_train_data.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
+
+Notes:
+======
+- Features are normalized and bounded within [-1,1].
+- Each feature vector is a row on the text file.
+- ---------------------------------------------------------------------
